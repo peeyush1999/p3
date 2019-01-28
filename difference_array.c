@@ -26,15 +26,19 @@ int main()
 				flagl=1;
 			}
 		}
-		if(flagl==0)  
+		if(flagl==0)  /* Making Right Scan in an array after i th element */
 		{ 
-			printf("%d\n",A[i]);		
+					
 					for(k=0;k<sizeB;k++)
-						if(A[i] != B[k])
-							printf("%d\n",B[k]);
+						if(A[i] == B[k])
+							count++;
 			
 		}
 
+		if(flagl == 0 && count == 0)
+		{
+			printf("%d\n",A[i]);
+		}
 	}
 
 }
