@@ -42,10 +42,14 @@ int main()
 		{
 			printf("%d ",A[i][endC]);
 		}
+		
+		if(startR < endR)
 		for( i=endC-1 ; i>=startR ; i-- )
 		{
 			printf("%d ",A[endR][i]);
 		}
+		
+		if(startC != endC)
 		for( i=endR-1 ; i>startR ; i-- )
 		{
 			printf("%d ",A[i][startC]);
